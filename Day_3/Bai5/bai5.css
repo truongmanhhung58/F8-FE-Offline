@@ -1,0 +1,45 @@
+.action {
+    margin-left: 50%;
+    margin: 40px;
+    text-align: center;
+}
+
+.size {
+    display: inline-block;
+    background-color: rgba(98, 98, 212, 0.729);
+    color: white;
+    padding: 10px 40px;
+}
+
+.title {
+    font-weight: normal;
+}
+
+.title strong {
+    color: blue;
+}
+
+.paragraph {
+    color: #555;
+}
+
+.function {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.function a {
+    padding: 12px;
+    min-width: 130px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.function a:hover {
+    opacity: 0.8;
+}

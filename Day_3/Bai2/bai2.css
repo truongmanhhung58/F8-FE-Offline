@@ -1,0 +1,21 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+p {
+    color: gray;
+}
+h1 {
+    text-align: center;
+}
+h1:after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: blue;
+    display: block;
+    left: 50%;
+    position: relative;
+    margin-bottom: 100px;
+}
+

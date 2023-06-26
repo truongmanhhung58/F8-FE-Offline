@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bai3.css">
+        <title>Form Access Manager</title>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <table width="30%" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td>
+                            <input type="text" name="username" id="username" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td>
+                            <input type="password" name="password" id="password" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City of Employment:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="city" id="city" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="server">Web server:</label></td>
+                        <td>
+                            <select name="server" id="server">
+                                <option value="">--Choose a server--</option>
+                                <option value="0">Server Trái Đất</option>
+                                <option value="1">Server HTMLOL</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            <label>Please specify your role:</label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="specify" value="0">Admin</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="radio" name="specify" value="1">Engineer</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="radio" name="specify" value="2">Manager</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="radio" name="specify" value="3">Guest</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">
+                            <label>Single Sign-on to the following:</label>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="sign-on" value="0">Mail</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="sign-on" value="1">Payroll</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="sign-on" value="2">Self-service</label>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
+           
+            <div class="button">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </body>
+</html>

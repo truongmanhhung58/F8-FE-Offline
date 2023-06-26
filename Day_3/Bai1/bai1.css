@@ -1,0 +1,60 @@
+h1:after {
+    content: "";
+    display: block;
+    background-color: orange;
+    bottom: -50px;
+    width: 65px;
+    height: 3px;
+}
+h1 {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.contact-if {
+    display: flex;
+}
+
+.contact-left {
+    margin-right: 200px;
+}
+.contact-left ul li {
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 20px;
+    color: gray ;
+    padding: 10px;
+}
+
+.contact-left i {
+    font-size: 20px;
+}
+
+h2 {
+    margin-left: 50px;
+    margin-bottom: 50px;;
+}
+
+.contact-right input{
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.contact-right textarea {
+    margin-left: 50px;
+    width: 103%;
+    height: 200px;
+    
+}
+
+.contact-right button {
+    margin-left: 50px;
+    margin-top: 15px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(23, 46, 223);
+}
