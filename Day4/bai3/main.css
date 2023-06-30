@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center ;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 label {
+    display: inline-block;
+    padding: 12px 20px;
+    color: gray;
+    text-decoration: none;
+    background:  #d4d0d0c9;
+}
+
+input {
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.products {
+    display: flex;
+    margin-left: 70px;
+}
+
+.products img{
+    width: 300px;
+    height: 300px;
+}
+
+.products-hover {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    color: gray;
+}
+
+.products-hover img{
+    transition: all 1s;
+}
+
+.products-hover .img-change1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.products-hover:hover .img-change1 {
+    opacity: 0;
+}
+
+.products-hover .img-change2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.products-hover:hover .img-change2 {
+    opacity: 0;
+}
+
+.products-hover .img-change3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}  
+
+.products-hover:hover .img-change3 {
+    opacity: 0;
+}
+
+.products-hover .img-change4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}  
+
+.products-hover:hover .img-change4 {
+    opacity: 0;
+}
+
+.products-hover .price {
+    color: black;
+}
+
+.icon {
+    display: flex;
+}
+
+.img-add{
+    display: none;
+}

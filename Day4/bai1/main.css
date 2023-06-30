@@ -1,0 +1,38 @@
+.heading {
+    box-sizing: border-box;
+    background-color: rgba(44, 83, 116, 0.934);
+    width: 1000px;
+    height: 150px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.heading .content {
+    color: #fff;
+}
+
+.heading .content strong {
+    color: rgb(255, 157, 0);
+}
+
+.heading .btn input{
+    width: 250px;
+    height: 25px;
+}
+
+.heading .btn button {
+    width: 200px;
+    height: 30px;
+    background-color: yellow;
+    font-size: 12px;
+}
+
+.heading .btn input:hover::placeholder{
+    color:  rgb(255, 157, 0);
+    background-color: #ddd;
+}
+
+.heading .btn button:hover {
+    background-color: rgb(255, 157, 0);
+    color: #fff;
+}
