@@ -1,0 +1,42 @@
+.content {
+    text-align: center;
+}
+
+.content p {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.form .photo {
+    margin-top: 50px;
+    width: 25%;
+    border: 2px #ccc solid;
+    margin-right: 30px;
+    height:400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form .photo p {
+    color: #b9a3a3da;
+    padding: 1%;
+}
+
+img {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    margin-top: 50px;
+}

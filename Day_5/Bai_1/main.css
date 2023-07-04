@@ -1,0 +1,151 @@
+.content {
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-family: 'Lobster';
+}
+
+.content p {
+    font-family: 'lato';
+    color: #ccc;
+}
+
+.content p span{
+    color: red;
+}
+.send-name,
+.send-email {
+    display: flex;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+.send-name input {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    background-image: url("../Bai_1/images/name.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 1px white;
+    padding: 10px 10%;
+}
+
+.send-email input {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    background-image: url("../Bai_1/images/email.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 1px #ccc;
+    padding: 10px 10%;
+}
+
+.phone-num input {
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    background-image: url("../Bai_1/images/phone.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px 5%;
+}
+
+.subject select {
+    width: 50.2%;
+    height: 50px;
+    background-color: white;
+    background-image: url("../Bai_1/images/subject.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 5%;
+}
+
+.send-name input:hover {
+    border: 1px solid black;
+    background-image: url(../Bai_1/images/user.png);
+    background-position-x: left;
+}
+
+
+.message textarea{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    background-image: url("../Bai_1/images/message.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 1px #ccc;
+    padding: 4px 50px;
+}
+
+
+.message textarea::placeholder {
+    padding: 20px;
+}
+
+.send-name,
+.send-email,
+.phone-num,
+.subject,
+.message {
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    display: flex;   
+    height: 40px;
+}
+
+.checkbox input {
+    left: 0;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.checkbox p {
+    color: #ccc;
+}
+
+.checkbox button {
+    background-color: rgb(212, 18, 18);
+    width: 120px;
+    height: 35px;
+    color: white;
+    right: 0;
+    margin-left: 300px;
+
+}
+
+.message {
+    display: flex;
+    width: 50%;
+    border: 1px solid #ccc;
+}
+
+#star {
+    padding-right: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#mes-star {
+    padding-right: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#star img {
+    width: 15px;
+}
+
+
+
+
