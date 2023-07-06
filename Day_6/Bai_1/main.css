@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(../font/OpenSans-Light.ttf);
+    font-weight: 300px;
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(../font/OpenSans-Regular.ttf);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(../font/OpenSans-Medium.ttf);
+    font-weight: 500px;
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(../font/OpenSans-Bold.ttf);
+    font-weight: 700px;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    font-family: "Open-Sans";
+}
+
+
+.menu {
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.about,
+.news,
+.portfolio,
+.blog, 
+.contacts {
+    width: 150px;
+    display: block;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: inset;
+}
+
+.home {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.box {
+    width: 450px;
+}
+
+.about ul,
+.news ul,
+.portfolio ul {
+    display: none;
+    margin: 15px -25px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin-top: 40px;   
+}
+
+.contacts p {
+    display: none;
+    margin-top: 40px;
+    border: 1px solid #666;
+    font-family: "Open-Sans";
+}
+
+.about ul li,
+.news ul li,
+.portfolio ul li {
+    display: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: inset;
+    padding: 15px 50px 10px 0;
+}
+
+.about:hover,
+.news:hover,
+.portfolio:hover {
+    background-color: #2da5da;
+}
+
+.about:hover ul,
+.news:hover ul,
+.portfolio:hover ul {
+    display: block;
+}
+
+.about:hover ul li,
+.news:hover ul li,
+.portfolio:hover ul li {
+    display: block;
+}
+
+.about a,
+.news a,
+.portfolio a,
+.blog a , 
+.contacts a {
+    text-decoration: none;
+    color: #666;
+}
+
+.contacts:active p {
+    display: block;
+}
+
+
+
+
+
