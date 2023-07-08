@@ -168,13 +168,13 @@ body {
 }
 
 .title::after {
+    position: absolute; 
+    display: block;
     content: "";
     background-color: #ff574d;
     width: 50px;
     height: 2px;
-    position: absolute; 
-    display: block;
-    transform: translateX(150px);
+    transform: translateX(180px);
 }
 
 
