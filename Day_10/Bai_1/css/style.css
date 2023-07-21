@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #27a6fb;
+}
+
+.content {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+.heading {
+    color: #fff;
+    text-align: right;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.heading span {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.heading span::before {
+    position: absolute;
+    content: 'inspired by';
+    display: inline-block;
+    font-size: 18px;
+    top: 8px;
+    left: 40px;
+    transform: translateX(-100%);
+    opacity: 0.7;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu i {
+    position: absolute;
+    color: #27a6fb;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: all 0.5s linear;
+}
+
+nav {
+    margin-top: 50px;
+    display: none;
+}
+
+nav ul {
+    display: block;  
+    margin-left: -50px; 
+}
+
+nav ul li {
+    margin-top: 15px;
+}
+
+nav label {
+    display: block;
+    width: 160px;
+    padding-left: 40px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: #27a6fb;
+    cursor: pointer;
+}
+
+.menu > label:nth-child(2) {
+    display: none;
+}
+
+#mn:checked ~ .menu > label:first-child {
+    display: none;
+}
+
+#mn:checked ~ .menu label:nth-child(2),
+#mn:checked ~ .menu nav {
+    display: block;
+}
+
+#mn:checked ~ .menu::after {
+    width: 250vw;
+    height: 250vw;
+}
+
+#item1:checked ~ .menu nav li:nth-child(1) label,
+#item2:checked ~ .menu nav li:nth-child(2) label,
+#item3:checked ~ .menu nav li:nth-child(3) label,
+#item4:checked ~ .menu nav li:nth-child(4) label {
+    background-color: #fff;
+    color: #000;
+}

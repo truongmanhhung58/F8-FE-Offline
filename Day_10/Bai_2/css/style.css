@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  :root {
+    --border: #ededed;
+    --grey: #ebebeb;
+    --blue: #1d8ad2;
+    --white: #fff;
+  }
+  
+  .section-wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ebebeb;
+    padding-top: 50px;
+  }
+  
+  .section-wrap .section {
+    width: 800px;
+    max-width: 100%;
+    height: 251px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section .container {
+    width: 100%;
+    position: relative;
+    perspective: 800px;
+  }
+  
+  .container .sec-menu {
+    width: 800px;
+    background-color: #fff;
+  
+    border-bottom: 1px solid var(--border);
+    display: flex;
+  }
+  .container .sec-menu label {
+    display: inline-block;
+    width: auto;
+    height: 46px;
+    border-right: 1px solid var(--border);
+    cursor: pointer;
+  }
+  .sec-menu label > div {
+    height: 46px;
+    padding: 15px 26px;
+    border: 3px solid var(--white);
+  }
+  
+  .container .sec-menu div:first-child {
+    padding-left: 25px;
+  }
+  
+  .container .sec-menu label:last-child {
+    border-right: none;
+  }
+  
+  .sec-menu span {
+    display: inline-block;
+    transform: translateY(-2px);
+  }
+  
+  /* sec-info */
+  .info-wrap {
+    position: absolute;
+    background-color: var(--white);
+    top: 47px;
+    left: 0;
+    height: 204px;
+    transform-origin: top center;
+    transform: rotateX(-30deg);
+    transition: all 0.9s ease;
+  }
+  
+  .container .sec-info {
+    width: 800px;
+    padding: 15px 0 20px 25px;
+    overflow-x: scroll;
+    background-color: var(--white);
+  }
+  
+  .container .sec-info .content {
+    width: 800px;
+  }
+  
+  .sec-info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .sec-info {
+    line-height: 1.4;
+  }
+  .content{
+    padding: 5px;
+  }
+  /* button checked */
+  #info-1,
+  #info-2,
+  #info-3,
+  #info-4 {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  #item1:checked ~ .container .sec-menu .btn-1,
+  #item2:checked ~ .container .sec-menu .btn-2,
+  #item3:checked ~ .container .sec-menu .btn-3,
+  #item4:checked ~ .container .sec-menu .btn-4 {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 3px solid var(--white);
+  }
+  #item1:checked ~ .container #info-1,
+  #item2:checked ~ .container #info-2,
+  #item3:checked ~ .container #info-3,
+  #item4:checked ~ .container #info-4 {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transform: rotateX(0);
+  }
+  #item1:checked ~ .container #wrap-1,
+  #item2:checked ~ .container #wrap-2,
+  #item3:checked ~ .container #wrap-3,
+  #item4:checked ~ .container #wrap-4 {
+    transform: translateX(0);
+  }
