@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Alfa Slab One";
+    src: url(../font/AlfaSlabOne-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../font/BebasNeue-Regular.ttf);
+}
+
+.mob-tab-address {
+    display: none;
+}
+
+.header {
+    max-width: 1353px;
+    padding: 54px 0;
+}
+
+.container {
+    margin: 0 12px;
+    padding: 0 15px;
+}
+
+.header .container .row {
+    display: flex;
+}
+
+.header .container .row .header-address-menu {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: #3d2514;
+    font-family: BebasNeue;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    
+}
+
+.header .container .row .header-address-menu .header-menu {
+    padding: 25px 0;
+}
+
+.header .container .row .header-address-menu .header-address {
+    display: flex;
+    height: 35px;
+    column-gap: 10px;
+}
+
+.header .container .row .header-address-menu .header-address span {
+    line-height: 35px;
+    color: #3d2514;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.header .container .row .header-address-menu .header-menu ul{
+    display: flex;
+    column-gap: 50px;
+    height: 30px;
+}   
+
+.header .container .row .header-address-menu .header-menu ul li a:hover {
+    color: #fff;
+}
+
+.header,
+.banner {
+    background: url("../img/header-bg.jpg");
+    background-size: cover;
+}
+
+.banner .container {
+    display: flex;
+    position: relative;
+}
+
+.banner .container .banner-img {
+    margin-left: auto;
+    width: 670px;
+    transform: translateY(-5%);
+}
+
+.banner .container .price-inner {
+    width: 170px;
+    height: 170px;
+    background: #bf2222;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: BebasNeue, sans-serif;
+    position: absolute;
+    left: 55%;
+    bottom: 5%;
+    border: 2px dashed #fff;
+}
+
+.banner .container .banner-inner {
+    color: #3d2514;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .container .banner-inner span{
+    font-family: BebasNeue, sans-serif;
+    font-size: 1.47rem;
+    font-weight: normal;
+    border: 2px dashed #3d2514;
+    align-self: flex-start;
+    padding: 3px 10px;
+}
+
+.banner .container .banner-inner h1 {
+    height: 120px;
+    line-height: 120px;
+    font-size: 80px;
+}
+.banner .container .banner-inner h2 {
+    height: 84px;
+    line-height: 84px;
+    font-size: 56px;
+}
+
+.banner .container .banner-inner h1,
+.banner .container .banner-inner h2 {
+    font-family: "Alfa Slab One", sans-serif;
+    margin: 0;
+    text-shadow: 4px 4px 0 #fff;
+    text-transform: uppercase;
+    width: 520px;
+}
+
+.banner .container .price-inner span:nth-child(1){
+    font-size: 4.3rem;
+}
+.banner .container .price-inner span:nth-child(2){
+    font-size: 1.8rem;
+}
+.banner .container .price-inner span.last {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width:900px) {
+    .mob-tab-address {
+        display: block;    
+    }
+    .header-address-menu .header-address{
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+}
