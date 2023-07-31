@@ -1,0 +1,40 @@
+.banner {
+    .banner-inner-title-left {
+        margin-top: 200px;
+        h3 {
+            font-size: 3.6rem;
+            line-height: 4.8rem;
+            font-weight: 800;
+        }   
+        strong {
+            font-size: 4.3rem;
+            font-weight: 800;
+        }
+        p {
+            width: 74%;
+            font-size: 1.6rem;
+            line-height: 20.417px;
+            font-weight: 400;
+            margin-top: 28px;
+        }
+    }
+    .banner-inner-title-right {
+        position: relative;
+        display: flex;
+        height: 70.8rem;
+        margin-right: 0;
+        background-color: #DCFFCA;
+        img {
+            position: absolute;
+            width: 47.1rem;
+            left: -120px;
+            top: 50px;
+        }
+        h1 {
+            font-size: 16.6rem;
+            color: #216000;
+            opacity: 0.15;
+            transform: rotate(90deg);
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@import "parts/variables";
+@import "parts/fonts";
+@import "parts/reset";
+@import "parts/mixin";
+@import "parts/base";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "pages/home/hero";
+
+.about {
+    .container {
+        .heading {
+            margin-top: 100px;
+            text-align: center;
+            h2 {
+               font-size: 3.1rem;
+               font-weight: 800;
+               line-height: 4.1rem;
+            }   
+            p {
+                font-size: 1.6rem;
+                margin: 0 auto;
+                margin-top: 24px;
+                max-width: 600px;
+            }           
+        }
+        .quality {  
+            position: relative;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 115px;
+            .quality-1-3 {
+                position: relative;
+                bottom: -25px;
+                width: 293px;
+                height: 338px;
+                padding: 0;
+                box-shadow: -5.8px 8.3px 72.5px 0px rgba(54, 54, 54, 0.12);
+                border-radius: 10px;
+                background-color: #fff;
+                z-index: 1;
+                .icon {
+                    width: 83.33px;
+                    height: 83.33px;
+                    margin-left: 33.33px;
+                    background-color: #FFF0E7;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 23.3px;
+                    img {
+                        width: 45px; 
+                    }
+                }
+                strong {
+                    margin-left: 33.33px;
+                    font-size: 4.3rem;
+                }
+                p {
+                    max-width: 200px;
+                    margin-left: 33.33px;
+                    margin-top: 23.3px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 3.1rem;
+                }
+            }
+
+            .quality-2 {
+                width: 343px;
+                height: 393px;
+                padding: 0;
+                margin-left: 22px;
+                margin-right: 22px;
+                box-shadow: -5.8px 8.3px 72.5px 0px rgba(54, 54, 54, 0.12);
+                border-radius: 10px;
+
+                .icon {
+                    width: 83.33px;
+                    height: 83.33px;
+                    margin-left: 33.33px;
+                    background-color: #F2FFEC;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 23.3px;
+                    img {
+                        width: 45px; 
+                    }
+                }
+                strong {
+                    margin-left: 33.33px;
+                    font-size: 4.3rem;
+                }
+                p {
+                    max-width: 200px;
+                    margin-left: 33.33px;
+                    margin-top: 23.3px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 3.1rem;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 235px;
+                height: 235px;
+                background-color: #dcffca;
+                border-radius: 50%;
+                top: -90px;
+                left: -20px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 235px;
+                height: 235px;
+                background-color: #ffd5bd;
+                border-radius: 50%;
+                bottom: -90px;
+                right: -20px;
+            }
+            
+        }
+    }
+}
+
+
