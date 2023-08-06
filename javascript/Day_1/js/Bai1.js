@@ -16,7 +16,7 @@ console.log("Bài 2");
 
 var S = 0;
 
-S = 10 + 20 + 5^10 / 2;
+S = 10 + 20 + Math.pow(5,10) / 2;
 
 console.log(`S = ${S}`);
 
