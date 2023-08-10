@@ -101,7 +101,7 @@ var triangleNumber = function(n) {
         var count = i * (i +1) / 2 - i + 1;
         let row = "";
         for (var j = 1; j <= i; j++) {
-            row += count++;
+            row += count++ + " ";
         }
         console.log(row);
     }
