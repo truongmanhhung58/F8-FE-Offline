@@ -117,7 +117,7 @@ var chess = function() {
     for(var i = 1; i <= 8; i++) {
         for(var j = 0; j <= 8; j ++){
             if (board.indexOf(i + " " + j) == -1) {
-                i % 2 === j % 2 ? (board += "W") : (board += "B");  
+                i % 2 === j % 2 ? (board += "W" + " ") : (board += "B" + " ");  
               }
         }
         board += "\n";
