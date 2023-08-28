@@ -19,7 +19,7 @@ var arr = [
 
 var createArticle = function(article) {
 
-    var item = document.createElement("div");
+  var item = document.createElement("div");
     item.classList.add("item");  
     var image = document.createElement("img");
     image.src = article.image;
