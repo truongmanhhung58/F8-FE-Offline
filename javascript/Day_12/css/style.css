@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: #8758ff;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.app {
+    margin: 80px auto;
+}
+
+.todos {
+    border: 0;
+    background-color: rgb(26, 26, 64);
+    text-align: center;
+    border-radius: 5px;
+    padding: 32px;  
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 8px;
+    background-color: rgb(26, 26, 64);
+}
+
+.todoForm {
+    display: flex;
+    background-color: rgb(26, 26, 64);
+    width: 100%;
+}
+
+.new-task {
+    margin-top: 16px;   
+    margin-bottom: 32px;
+    border: 1px solid #8758ff;
+    background-color: rgb(26, 26, 64);
+    padding: 8px 16px;
+    width: 300px;
+    outline: 0;
+    color: #fff;
+}
+
+.add-task {
+    border: none;
+    cursor: pointer;
+    background-color: #8758ff;
+    padding: 0.55rem;
+    color: #fff;
+    height: 33px;
+    margin-top: 16px;
+}
+
+.edit,
+.delete {
+  padding: 5px;
+  background-color: #8758ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.save {
+  padding: 9px;
+  background-color: #8758ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.edit i,
+.delete i {
+  font-size: 16px;
+}
+
+.taskText {
+    padding: 8px 16px;
+    width: 288px;
+    border: 1px solid #8758ff;
+    outline: none;
+    color: #fff;
+    background: none;
+}
+
+.task-item {
+    display: block;
+    position: absolute;
+    display: block;
+}
+
+ul {
+    width: 395px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+li {
+    margin-bottom: 10px;
+    display: flex;
+}

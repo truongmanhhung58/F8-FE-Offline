@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.list {
+    margin: 16px;
+    width: 600px;
+    padding: 16px;
+    background-color: #4286f4;
+}
+
+.list-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.list-inner li {
+    border: 1px solid #fff;
+    padding: 9px;
+    user-select: none;
+}
+
+.module {
+    background-color: #ff6f00;
+}
+
+.lesson {
+    background-color: #8bb3f4;
+}
+
