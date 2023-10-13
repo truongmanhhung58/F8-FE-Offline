@@ -7,7 +7,7 @@ items.forEach( function(item) {
     
     var getElementOffsetY = function(e) {
         elementOffsetY = e.offsetY 
-        e.target.style.filter = "rotate(40deg)"
+        e.target.style.filter = "hue-rotate(40deg)"
         var handleDragEnd = function() {
             e.target.style.filter = ""
             handleArrange()
