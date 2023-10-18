@@ -1,6 +1,10 @@
 
 const handleVoice = (result) => {
     result = result.toLowerCase();
+    if(result.includes("tôi là diệp")) {
+      alert("tôi yêu em <3")
+    }
+
     if (result.includes("google" || "gu gồ")) {
       window.location.href = "https://www.google.com";
     }
@@ -49,3 +53,15 @@ const handleVoice = (result) => {
       }, 1000);
     }
   };
+
+
+// const handleVoice = (result) => {
+//   result = result.toLoweCase();
+//   const data = {
+//     google: "https://www.google.com",
+//     facebook: "https://www.facebook.com/",
+//     youtube: "https://www.youtube.com/",
+//     google_drive: "https://www.youtube.com/",
+
+//   }
+// }
