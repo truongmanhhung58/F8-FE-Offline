@@ -14,9 +14,9 @@ function startDown(currentTime) {
     counter.innerText = counterTime;
   }
   if(counterTime > 0) {
-    requestAnimationFrame(startDown);
+    window.requestAnimationFrame(startDown);
   } else {
-    cancelAnimationFrame(startDown)
+    window.cancelAnimationFrame(startDown)
     btnGetLink.disabled = false;
     btnGetLink.addEventListener("click",() => {
         window.location.href="https://fullstack.edu.vn/courses"
