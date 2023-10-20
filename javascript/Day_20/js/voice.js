@@ -66,7 +66,7 @@
 //   }
 // }
 
-const handleVoice = (result) => {
+
   const data = [{
     key: ["google", "gu gồ"],
     value: "https://www.google.com"
@@ -83,9 +83,17 @@ const handleVoice = (result) => {
     key: ["google drive", "gu gồ đờ rai vờ"],
     value: "https://drive.google.com/drive/my-drive"
   },
-  
+  {
+    key: ["google drive", "gu gồ đờ rai vờ"],
+    value: "https://drive.google.com/drive/my-drive"
+  },
+  {
+    key: ["google maps", "gu gồ map"],
+    value: "https://www.google.com/maps"
+  }
   ]
   
+const handleVoice = (result) => {
   for(const item of data) {
     if(item.key.includes(result.toLowerCase())) {
       window.location.href = item.value
