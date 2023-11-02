@@ -49,16 +49,17 @@ const data = [{
 const handleVoice = (listerned) => {
   for(const item of data) {
     if(item.key.includes(listerned.toLowerCase())) {
-      window.location.href = item.value
+      window.open(data.value, "_blank")
       break;
     }
   }
 }
 
 recognition.onresult = (event) => {
-  const result = event.results[0][0].transcript.toLowerCase();
-  result.innerHTML = `
-        <span class="alert">Đã nói xong. Hy vọng kết quả như ý bạn</span>
-        <span class="run">Đang thực hiện: ${result}</span>`;
-  handleVoice(result);
+  const results = event.results[0][0].transcript.toLowerCase();
+  results.innerHTML = `
+    <span class="alert">Đã nói xong. Hy vọng kết quả như ý bạn</span>
+    <span class="run">Đang thực hiện: ${results}</span>`;
+  handleVoice(results);
 };
+
